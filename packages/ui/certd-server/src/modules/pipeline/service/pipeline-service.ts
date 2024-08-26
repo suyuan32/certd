@@ -18,7 +18,7 @@ import { EmailService } from '../../basic/service/email-service.js';
 import { NeedVIPException } from '../../../basic/exception/vip-exception.js';
 
 const runningTasks: Map<string | number, Executor> = new Map();
-const freeCount = 10;
+const freeCount = 100000;
 /**
  * 证书申请
  */
