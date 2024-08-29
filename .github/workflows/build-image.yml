@@ -54,8 +54,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: registry.cn-shenzhen.aliyuncs.com
-          username: ${{ build-docker.ALIYUN_CS_USERNAME }}
-          password: ${{ build-docker.ALIYUN_CS_PASSWORD }}
+          username: ${{ secrets.ALIYUN_CS_USERNAME }}
+          password: ${{ secrets.ALIYUN_CS_PASSWORD }}
 
       - name: Build and push
         uses: docker/build-push-action@v6
